@@ -1,20 +1,14 @@
-# __Name
+# A package of React Styled Components Atoms
 
 ![this project is under construction](https://klimcode.github.io/base/construction.png)
 
-__Description
+These stateless components are configured to use baseline alignment metrics.
 
 ## Installation
 
-```bash
-npm i -S __npm__registry__name__
-```
+`npm i -S react-sc-atoms-set` or `yarn add react-sc-atoms-set`
 
-or
-
-```bash
-yarn add __npm__registry__name__
-```
+**Important**: `React` and `Styled-Components` must be installed in your project.
 
 ## Example
 
