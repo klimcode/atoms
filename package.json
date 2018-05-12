@@ -1,23 +1,32 @@
 {
-  "name": "xxxxxxxxxxxx",
+  "name": "react-sc-atoms-set",
   "version": "0.1.0",
-  "description": "xxxxx",
-  "scripts": {},
+  "description": "a set of React Styled Components atoms",
+  "scripts": {
+    "start": "start-storybook -p 9001 -c .storybook",
+    "build": "build-storybook -c .storybook -o docs"
+  },
   "dependencies": {},
   "devDependencies": {
+    "@storybook/react": "^3.4.3",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^8.2.3",
     "eslint": "^4.19.1",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-plugin-import": "^2.11.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
-    "eslint-plugin-react": "^7.7.0"
+    "eslint-plugin-react": "^7.7.0",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "styled-components": "^3.2.6"
   },
   "author": "John Klimov",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/klimcode/xxxxxxxxxxxx.git"
+    "url": "git+https://github.com/klimcode/atoms.git"
   },
   "bugs": {
-    "url": "https://github.com/klimcode/xxxxxxxxxxxx/issues"
+    "url": "https://github.com/klimcode/atoms/issues"
   }
 }
