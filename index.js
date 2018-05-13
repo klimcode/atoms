@@ -1,1 +1,1 @@
-export { H1, H2, H3 } from './atoms';
+export { H1, H2, H3 } from './atoms/H';

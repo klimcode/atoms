@@ -13,6 +13,12 @@ const METRICS = {
     font-size: 16px;
     line-height: 32px;
   `,
+  openSans_32: `
+    margin: -10px 0 0;
+    padding: 0 0 10px;
+    font-size: 24px;
+    line-height: 32px;
+  `,
   openSans_32_gap: `
     margin: 0 0 -3px 0;
     padding: 67px 0 0 0;
@@ -46,5 +52,5 @@ const METRICS = {
 };
 
 export default {
-  FS_DEF, FF_DEF, METRICS_DEF, METRICS,
+  METRICS, METRICS_DEF, FF_DEF, FS_DEF,
 };
