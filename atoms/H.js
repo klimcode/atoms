@@ -1,6 +1,9 @@
 // import React from 'react';
 import styled from 'styled-components';
-import getBaselineStyles from './baseline';
+import baseline from './baseline';
+import metrics from './font-metrics';
+
+const getBaselineStyles = baseline(metrics);
 
 
 export const H1 = styled.h1`
