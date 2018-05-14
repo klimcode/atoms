@@ -6,7 +6,7 @@ import getBaselineStyles from '../baseline';
 export const H1 = styled.h1`
   ${getBaselineStyles}
   font-weight: bold;
-  color: ${props => props.color || props.theme.color};
+  color: ${props => props.color || (props.theme.h1 && props.theme.h1.color)};
 `;
 H1.defaultProps = {
   component: 'h1',

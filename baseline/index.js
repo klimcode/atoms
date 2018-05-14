@@ -4,17 +4,18 @@ const getMetrics = (props) => {
     METRICS, METRICS_DEF, FF_DEF, FS_DEF,
   } = theme.fontMetrics;
 
-  const themeComponentStyles = theme && theme[component];
+  const themeGlobalFF = theme && theme.fontFamily;
+  const themeComponent = theme && theme[component];
 
-  const themeFontFamily = themeComponentStyles && themeComponentStyles.fontFamily;
-  const themeFontSize = themeComponentStyles && themeComponentStyles.fontSize;
-  const themeGap = themeComponentStyles && themeComponentStyles.gap;
+  const themeFontFamily = (themeComponent && themeComponent.fontFamily) || themeGlobalFF;
+  const themeFontSize = themeComponent && themeComponent.fontSize;
+  const themeGap = themeComponent && themeComponent.gap;
   const finalFontFamily = props.ff || themeFontFamily || FF_DEF;
   const finalFontSize = props.fs || themeFontSize || props.fontSizeDef || FS_DEF;
 
 
-  const gap = ((props.gap || themeGap || props.gapDef) && '_gap') || '';
-  const id = `${finalFontFamily}_${finalFontSize}${gap}`;
+  const gap = ((props.gap || themeGap || props.gapDef) && ' gap') || '';
+  const id = `${finalFontFamily}: ${finalFontSize}${gap}`;
 
   // debugger;
   const result = METRICS[id];

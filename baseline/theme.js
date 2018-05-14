@@ -4,7 +4,7 @@ export default {
   fontMetrics,
   color: 'red',
   fontSize: '16',
-  fontFamily: 'openSans',
+  fontFamily: 'Open Sans',
   h1: {
   },
   h2: {
