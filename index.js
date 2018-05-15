@@ -1,3 +1,3 @@
-export { H1, H2, H3 } from './atoms/H';
-export { Flex } from './atoms/Flex';
-export { cssBaseline, cssInlineGapDesktop } from './atoms/css';
+export { H1, H2, H3 } from './a/H';
+export { Flex } from './a/Flex';
+export { cssBaseline, cssInlineGapDesktop } from './a/css';

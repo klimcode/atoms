@@ -2,7 +2,8 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { ThemeProvider } from 'styled-components';
 // import { action } from '@storybook/addon-actions';
-import { H1, H2, H3 } from '../atoms/H';
+import { H1, H2, H3 } from '../a/H';
+import Hamburger from '../a/Hamburger';
 import theme from '../baseline/theme';
 
 storiesOf('Header', module)
@@ -28,5 +29,22 @@ storiesOf('Header', module)
         <H3>H3 without gap</H3>
         <H3 gap>H3 with gap</H3>
       </div>
+    </ThemeProvider>
+  ));
+
+storiesOf('Hamburger', module)
+  .add('Unpressed', () => (
+    <ThemeProvider theme={theme}>
+      <Hamburger />
+    </ThemeProvider>
+  ))
+  .add('Unpressed Hidded MD', () => (
+    <ThemeProvider theme={theme}>
+      <Hamburger hidden_md />
+    </ThemeProvider>
+  ))
+  .add('Pressed', () => (
+    <ThemeProvider theme={theme}>
+      <Hamburger isPressed />
     </ThemeProvider>
   ));
